@@ -1,4 +1,167 @@
 <html>
-  <body><p>Hello world</p>
-  </body>
+	
+<head>
+	<title>KUKO 국민코디</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="국민코디가 되어 데일리룩을 공유하고 평가해주세요.">
+	<meta name="keywords" content="코디, 패션, 데일리룩, 룩북, 국민코디, 국코, 쿠코, kuko">
+	<meta name="author" content="Phlox">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/kukofavicon.ico" />
+    <link type="text/css" rel="stylesheet" href="kuko.css">
+
+      <style>
+      	
+      	body{background-color: var(--kuko);
+      		background-image: linear-gradient(#529DFF, #6E38F2);}
+
+      	.kukocontentbox{position: relative; height: 100%; font-size:1.4rem;}
+      	#kuko_contents{position: absolute;top: 50%;left:50%; height: 30%;transform:translate(-50%,-50%); text-align:center;}
+
+		#logo_title{color:white; margin-bottom:1rem;}
+      	#kuko_logo{ width: 23rem; height: 10.9rem; background-image: url('img/kuko_white@3x.png'); background-repeat: no-repeat;background-size: 100%; margin-left:7rem; }
+
+      	#emailboxwhole{text-align:center;display:block;margin:0 auto;}
+      	#emailbox{height:4rem;background-color:white;border-radius: .5rem 0 0 .5rem; width:26rem; margin-top:1rem; margin-bottom:1rem; padding:1rem; font-size:1.4rem;}
+
+      	#emailbox::placeholder{ color:lightgray;}
+      	.explanation{color:white;}
+
+      	#submit{height:4rem;background-color:var(--kuko);width:10rem;color:white;border-radius: 0 .5rem .5rem 0; margin-left:-0.4rem;font-size:1.4rem;}
+      	#smallexplanation{font-size:1.2rem; }
+
+
+		.footer{
+			    display: block; position: relative;
+			    float: left;
+			    width: 100%; height: 24rem; bottom: 0rem;
+			    background-color: white;
+			    padding-top: 3.6rem;
+			    padding-left: 10rem;
+			    border-top:1px solid rgba(255,255,255,0.1);
+			}
+
+			.footer .logo{
+			    float: left;
+			    width: 13rem;
+			    height: 5rem;
+			    background-image: url('img/phloxlogo_rgb.png');
+			    background-repeat: no-repeat;
+			    background-size:100%;
+			}
+
+			.footer .text{
+			    float: left;
+			    margin: 0.7rem;
+			    margin-left: 4rem;
+			    margin-right: 20rem;
+			    line-height: 3rem;
+			    width: auto;
+			    font-size: 1.4rem;
+			    color: gray;
+			    overflow: hidden;
+
+			}
+			.footer a{ font-weight: 900;}
+
+			@media screen and (max-width: 1024px){
+
+			#kuko_logo{margin-left:0rem; width:18rem;height:7.9rem; margin:0 auto;}
+
+			#emailboxwhole{margin-top:0.2rem;}
+			#emailbox{width:24rem;font-size:1.2rem; border-radius:.5rem; text-align:center; margin-top:1.4rem;}
+			#submit{width:24rem; border-radius:.5rem;}
+			#smallexplanation{margin-top:1rem;color:rgba(255,255,255,0.6); font-size:1.1rem;}
+    
+		    .footer{padding-left:3rem; height:42rem;}
+		    .footer .text{margin-left:0%; width:80%;}
+		    .footer .text .policy{margin-bottom:1rem;}
+
+		    #kbescrow{width:6rem; margin-top:3rem;}
+			}
+
+      
+      </style>
+</head>
+
+
+<body>
+	<div id="main">
+        
+        <div class="header">
+
+<!--  네비게이션 메뉴 빼버림 (구 플록스 사이트 상단바)
+          <ul id="navmenu">            
+            <div class="header-left">
+            <a class="logo" href="index.html"></a>
+            </div>
+            <li><a href="index.html">ussly</a></li>
+            <li><a href="kuko.html">kuko</a></li>
+          </ul>
+
+-->
+
+        </div>
+
+        <div class="kukocontentbox">
+	        <div id="kuko_contents">
+	        	<div id="kuko_title">
+		        	<div id="logo_title">국민코디 평가</div>
+		        	<div id="kuko_logo"></div>
+	        	</div>	
+
+	        	<div id="emailboxwhole">
+	        		<div class="explanation">곧 재미있는 일이 생길 것만 같아 🥰</div>
+	        		<form action="" method="post" id="email">
+	        			<input type="text" id="emailbox" placeholder="이메일을 입력해주세요">
+	        			<input type="submit" id="submit" value="enter">
+	        		</form>
+	        		<div class="explanation" id="smallexplanation">* 앱 출시 일자에 이메일을 보내드립니다.</div>
+	        	</div>
+
+	        </div>
+ 	   </div>
+
+
+ 	 <div class="footer">
+            <div class="logo"></div>
+            <div class="text">
+              주식회사 플록스
+              </br>서울시 강남구 삼성동 16F | 대표 이은성 | 사업자등록번호 204-86-58239
+              </br>문의 : contact@phloxcorp.io
+            </div>
+            <div class="text">
+              <a class="policy" href="terms.html">이용약관</a>
+                </br>
+              <a class="policy" href="privacypolicy.html">개인정보처리방침</a>
+            </div>
+            <div>
+              <script>
+              function onPopKBAuthMark()
+              {
+              window.open('','KB_AUTHMARK','height=604, width=648, status=yes, toolbar=no, menubar=no, location=no');
+              document.KB_AUTHMARK_FORM.action='http://escrow1.kbstar.com/quics';
+              document.KB_AUTHMARK_FORM.target='KB_AUTHMARK';
+              document.KB_AUTHMARK_FORM.submit();
+              }
+              </script>
+              <form name="KB_AUTHMARK_FORM" method="get">
+              <input type="hidden" name="page" value="B009111"/>
+              <input type="hidden" name="cc" value="b010807:b008491"/>
+              <input type="hidden" name="mHValue" value='c6b6f8e017066161267465e27e451b16201809131126556'/>
+              </form>
+              <a href="#" onclick="javascript:onPopKBAuthMark();return false;">
+              <img id="kbescrow" src="http://img1.kbstar.com/img/escrow/escrowcmark.gif" border="0"/>
+              </a>
+              <!-- KB에스크로 이체 인증마크 적용 종료 -->
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
 </html>
