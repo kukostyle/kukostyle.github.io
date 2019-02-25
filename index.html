@@ -22,12 +22,12 @@
       	#kuko_logo{ width: 23rem; height: 10.9rem; background-image: url('img/kuko_white@3x.png'); background-repeat: no-repeat;background-size: 100%; margin-left:7rem; }
 
       	#emailboxwhole{text-align:center;display:block;margin:0 auto;}
-      	#emailbox{height:4rem;background-color:white;border-radius: .5rem 0 0 .5rem; width:26rem; margin-top:1rem; margin-bottom:1rem; padding:1rem; font-size:1.4rem;}
+      	.emailbox{height:4rem;background-color:white;border-radius: .5rem 0 0 .5rem; width:26rem; margin-top:1rem; margin-bottom:1rem; padding:1rem; font-size:1.4rem;}
 
-      	#emailbox::placeholder{ color:lightgray;}
+      	.emailbox::placeholder{ color:lightgray;}
       	.explanation{color:white;}
 
-      	#submit{height:4rem;background-color:var(--kuko);width:10rem;color:white;border-radius: 0 .5rem .5rem 0; margin-left:-0.4rem;font-size:1.4rem;}
+      	.submit{height:4rem;background-color:var(--kuko);width:10rem;color:white;border-radius: 0 .5rem .5rem 0; margin-left:-0.4rem;font-size:1.4rem;}
       	#smallexplanation{font-size:1.2rem; }
 
 
@@ -69,8 +69,8 @@
 			#kuko_logo{margin-left:0rem; width:18rem;height:7.9rem; margin:0 auto;}
 
 			#emailboxwhole{margin-top:0.2rem;}
-			#emailbox{width:24rem;font-size:1.2rem; border-radius:.5rem; text-align:center; margin-top:1.4rem;}
-			#submit{width:24rem; border-radius:.5rem;}
+			.emailbox{width:24rem;font-size:1.2rem; border-radius:.5rem; text-align:center; margin-top:1.4rem;}
+			.submit{width:24rem; border-radius:.5rem;}
 			#smallexplanation{margin-top:1rem;color:rgba(255,255,255,0.6); font-size:1.1rem;}
     
 		    .footer{padding-left:3rem; height:42rem;}
@@ -112,9 +112,10 @@
 
 	        	<div id="emailboxwhole">
 	        		<div class="explanation">곧 재미있는 일이 생길 것만 같아 🥰</div>
-	        		<form action="" method="post" id="email">
-	        			<input type="text" id="emailbox" placeholder="이메일을 입력해주세요">
-	        			<input type="submit" id="submit" value="enter">
+	        		<form action="https://phloxcorp.us20.list-manage.com/subscribe/post?u=b0500fc7d97769a6bdd2d7d99&amp;id=eb16175f20" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	        			<input type="text" class="emailbox" value="" name="EMAIL" id="mce-EMAIL" placeholder="이메일을 입력해주세요">
+					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b0500fc7d97769a6bdd2d7d99_eb16175f20" tabindex="-1" value=""></div>
+	        			<input type="submit" class="submit" name="subscribe" id="mc-embedded-subscribe" value="enter">
 	        		</form>
 	        		<div class="explanation" id="smallexplanation">* 앱 출시 일자에 이메일을 보내드립니다.</div>
 	        	</div>
