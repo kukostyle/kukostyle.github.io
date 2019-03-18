@@ -1,4 +1,4 @@
-*, *::after, *::before {-webkit-overflow-scrolling: auto;}
+*, *::after, *::before {}
 /*    -webkit-transition: all 0.20s ease-in-out;
     -moz-transition: all 0.20s ease-in-out;
     -ms-transition: all 0.20s ease-in-out;
@@ -19,23 +19,12 @@ html, body{
 }
 
 /* color palette*/
-:root {
-  --light-purple: #984bff;
-  --lighter-purple: #b067ff;
-  --purple: #8727ff;
-  --white: #ffffff;
-  --manilla: #fff283;
-  --shadowyellow: #FFD300;
-  --magenta: #ff00d9;
-  --shadowmagenta: #B83CDF;
-  --blue-purple: #6d00ff;
-  --violet-blue: #5d04d3;
-}
-body {background-color: var(--lighter-purple);}
+
+body {background-color: #b067ff;}
 
 /*
 ::-webkit-scrollbar { width: 0.8rem;}
-::-webkit-scrollbar-thumb {border-radius: 6rem; background-color: var(--white); }
+::-webkit-scrollbar-thumb {border-radius: 6rem; background-color: #ffffff; }
 */
 
 /* gnb */
@@ -63,7 +52,7 @@ button.gnb:active{ color: var(--faded-orange); border-bottom-color: var(--faded-
   float: left; overflow: auto;  padding: 4rem 4rem 4rem 6rem;
   font-family: 'Noto Sans KR';
   font-weight: 700;
-  font-size:  1.6rem; color: var(--white);
+  font-size:  1.6rem; color: #ffffff;
 }
 
 .gnb-bar .gnb-bar-left img {
@@ -85,9 +74,9 @@ button.gnb:active{ color: var(--faded-orange); border-bottom-color: var(--faded-
   position: relative;
   height: 40%;
   padding: 14rem 0rem 0rem 6rem;
-  color: var(--white);
+  color: #ffffff;
   font-size: 9rem; line-height: 10rem;
-  text-shadow: -0.1rem -0.1rem 0rem var(--shadowyellow), -1rem -0.6rem 0rem var(--shadowmagenta);
+  text-shadow: -0.1rem -0.1rem 0rem #FFD300, -1rem -0.6rem 0rem #B83CDF;
   }
 
 #privacypolicy>.main-01 { width: 100%; }
@@ -121,11 +110,11 @@ body {
 }
 
 #privacypolicy>.jumbotron{
-  background-color: var(--blue-purple);
+  background-color: #6d00ff;
 }
 
 #privacypolicy>.gnb-bar{
-  background-color: var(--blue-purple);
+  background-color: #6d00ff;
 }
 
 .privacypolicy, .terms {
@@ -137,7 +126,7 @@ body {
   font-weight: 400;
   width: 70%; height: 60%;
   font-family: 'Noto Sans KR'; line-height: 3.6rem;
-  font-size:  1.8rem; color: var(--white);
+  font-size:  1.8rem; color: #ffffff;
   overflow: scroll;
 
 }
@@ -180,7 +169,7 @@ body {
   float: left;
   padding: 4rem 1rem 6rem 1rem;
   font-family: 'Noto Sans KR';   font-weight: 700;
-  font-size:  1.2rem; color: var(--white);
+  font-size:  1.2rem; color: #ffffff;
 }
 
 
@@ -207,7 +196,7 @@ body {
 .privacypolicy, .terms {
   margin-top:3rem; padding-bottom: 10rem; padding-left: 6rem; padding-right: 6rem;
 }
-  #privacypolicy>.gnb-bar { background-color: var(--violet-blue);}
+  #privacypolicy>.gnb-bar { background-color: #5d04d3;}
 
 }
 
@@ -224,12 +213,12 @@ body {
   /*일단 모바일 보면서 사이즈 조정함*/
   .gnb-bar .gnb-bar-left img {height: 2rem; margin-top:0.3rem;}
   .gnb-bar .gnb-bar-left .gnb {padding: 3.7rem 0rem 0rem 4rem; font-size: 1.8rem;}
-  #privacypolicy>.gnb-bar { background-color: var(--violet-blue);}
+  #privacypolicy>.gnb-bar { background-color: #5d04d3;}
   #privacypolicy>.main-01>.main{font-size:5rem;
     padding-right: 0rem; padding-left: 0rem; text-align: center;}
   .footer{overflow:visible;
     overflow: visible; position: relative;
-    display: block; background-color: var(--violet-blue);
+    display: block; background-color: #5d04d3;
     padding: 4rem; height: 40rem;}
   .footer .footer-left, .footer .footer-right {
     float: left; display: block; margin-left: 0;
@@ -240,5 +229,5 @@ body {
     padding: 0rem; margin-top:2rem; padding-right:2rem;
   }
   #main>.main-01{height:90rem;}
-  #main>.gnb-bar {background-color: var(--lighter-purple);}
+  #main>.gnb-bar {background-color: #b067ff;}
 }
