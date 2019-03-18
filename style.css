@@ -1,4 +1,3 @@
-
 *, *::after, *::before {}
 /*    -webkit-transition: all 0.20s ease-in-out;
     -moz-transition: all 0.20s ease-in-out;
@@ -7,7 +6,14 @@
 
 html, body{
   font-family: 'Jua';
-  font-size: 10px; width: 100%; height: 100%; }
+  font-size: 10px; width: 100%; height: 100%;
+  font-size: calc(100vw/144);
+  }
+
+@media (min-width: 940px) {
+  html {}
+}
+
 
 /* color palette*/
 :root {
@@ -22,6 +28,11 @@ html, body{
   --blue-purple: #6d00ff;
 }
 body {background-color: var(--lighter-purple);}
+
+/*
+::-webkit-scrollbar { width: 0.8rem;}
+::-webkit-scrollbar-thumb {border-radius: 6rem; background-color: var(--white); }
+*/
 
 /* gnb */
 
@@ -80,14 +91,13 @@ button.gnb:active{ color: var(--faded-orange); border-bottom-color: var(--faded-
 .appstore {
   display: block;
   position: absolute;
-  width: 100%; height: 60%;
-  top:45rem; left:-7rem;
+  width: 20rem; height: 10rem; top: calc(70vh); left: calc(7vw);
   background-image: url(bg/btn.svg);
-  background-size: auto; background-repeat: no-repeat; background-position: center;
+  background-size: contain; background-repeat: no-repeat; background-position: center;
 }
 strong {font-weight: 700;}
 #privacypolicy>.main-03>a>.appstore {
-  width: 28rem; height: 13rem; left: 75vw; top: 45vh;
+  width: 20rem; height: 10rem;  top: calc(50vh); left: calc(80vw);
 }
 /*
 .wrap {
