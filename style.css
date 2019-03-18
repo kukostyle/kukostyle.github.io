@@ -10,7 +10,7 @@ html, body{
   font-size: calc(100vw/144);
   }
 
-@media (max-width: 800px) {
+@media (max-width: 800px), (orientation: portrait) {
   html {font-size: calc(100vw/70);}
 }
 
@@ -185,7 +185,7 @@ body {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 800px), (orientation: portrait) {
 .main-01{width: 100%;}
 .jumbotron>.backgroundbasic {
   background-position: top 10vh left 100vw; width: 150%;}
