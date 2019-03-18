@@ -30,6 +30,7 @@ html, body{
   --magenta: #ff00d9;
   --shadowmagenta: #B83CDF;
   --blue-purple: #6d00ff;
+  --violet-blue: #5d04d3;
 }
 body {background-color: var(--lighter-purple);}
 
@@ -190,10 +191,35 @@ body {
   background-position: top 10vh left 100vw; width: 150%;}
 .privacypolicy, .terms { width: 100%; padding-left: 10rem; padding-right: 10rem;}
 #privacypolicy>.main-03>a>.appstore {display: none;}
+/*일단 모바일 보면서 사이즈 조정함*/
+
 }
 
 @media (max-width: 430px) {
   .main{ padding-right: 6rem;}
-  .appstore{    width: 25rem; height: 10rem; top: calc(72vh); left: 6rem;}
-  .privacypolicy, .terms { width: 100%; padding-left: 6rem; padding-right: 6rem;}
+  .appstore{ width: 25rem; height: 10rem; top: calc(72vh); left: 6rem;}
+  .privacypolicy, .terms {
+    width: 100%; padding-left: 4rem; padding-right: 6rem; padding-bottom:5rem;
+    margin-top:3rem;
+  }
+  /*일단 모바일 보면서 사이즈 조정함*/
+  .gnb-bar .gnb-bar-left img {height: 2rem; margin-top:0.3rem;}
+  .gnb-bar .gnb-bar-left .gnb {padding: 3.7rem 0rem 0rem 4rem; font-size: 1.8rem;}
+  #privacypolicy>.gnb-bar { background-color: var(--violet-blue);}
+  #privacypolicy>.main-01>.main{font-size:5rem;
+    padding-right: 0rem; padding-left: 0rem; text-align: center;}
+  .footer{overflow:visible;
+    overflow: visible; position: relative;
+    display: block; background-color: var(--violet-blue);
+    padding: 4rem; height: 40rem;}
+  .footer .footer-left, .footer .footer-right {
+    float: left; display: block;
+    padding: 0rem;
+  }
+  .footer>.footer-left>h1, .footer>.footer-right>h1 {
+    font-weight: 400; font-size: 1.4rem;
+    padding: 0rem; margin-top:2rem; margin-right:2rem;
+  }
+  #main>.main-01{height:90rem;}
+  #main>.gnb-bar {background-color: var(--lighter-purple);}
 }
