@@ -1,0 +1,170 @@
+
+*, *::after, *::before {}
+/*    -webkit-transition: all 0.20s ease-in-out;
+    -moz-transition: all 0.20s ease-in-out;
+    -ms-transition: all 0.20s ease-in-out;
+    -o-transition: all 0.20s ease-in-out; */
+
+html, body{
+  font-family: 'Jua';
+  font-size: 10px; width: 100%; height: 100%; }
+
+/* color palette*/
+:root {
+  --light-purple: #984bff;
+  --lighter-purple: #b067ff;
+  --purple: #8727ff;
+  --white: #ffffff;
+  --manilla: #fff283;
+  --shadowyellow: #FFD300;
+  --magenta: #ff00d9;
+  --shadowmagenta: #B83CDF;
+  --blue-purple: #6d00ff;
+}
+body {background-color: var(--lighter-purple);}
+
+/* gnb */
+
+
+/*button.gnb:hover{ color: var(--light-mustard);
+}
+button.gnb:active{ color: var(--faded-orange); border-bottom-color: var(--faded-orange);
+}*/
+
+
+.gnb-bar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 10rem;
+  z-index: 10;
+  overflow: auto;
+}
+
+.gnb-bar .gnb-bar-left {
+  float: left; overflow: auto;
+}
+
+.gnb-bar .gnb-bar-left .gnb {
+  float: left; overflow: auto;  padding: 4rem 4rem 4rem 6rem;
+  font-family: 'Noto Sans KR';
+  font-weight: 700;
+  font-size:  1.6rem; color: var(--white);
+}
+
+.gnb-bar .gnb-bar-left img {
+  float: left; height: 2rem;
+}
+
+
+
+/* main page */
+
+.main-01 {
+  display: block;
+  position:relative;
+  width: 40%;
+}
+
+.main {
+  display: block;
+  position: relative;
+  height: 40%;
+  padding: 14rem 0rem 0rem 6rem;
+  color: var(--white);
+  font-size: 9rem; line-height: 10rem;
+  text-shadow: -0.1rem -0.1rem 0rem var(--shadowyellow), -1rem -0.6rem 0rem var(--shadowmagenta);
+  }
+
+#privacypolicy>.main-01 { width: 100%; }
+
+.appstore {
+  display: block;
+  position: absolute;
+  width: 100%; height: 60%;
+  top:45rem; left:-7rem;
+  background-image: url(bg/btn.svg);
+  background-size: auto; background-repeat: no-repeat; background-position: center;
+}
+strong {font-weight: 700;}
+#privacypolicy>.main-03>a>.appstore {
+  width: 28rem; height: 13rem; left: 75vw; top: 45vh;
+}
+/*
+.wrap {
+  padding: 0rem 6rem;
+}
+*/
+
+/* Background & buttons */
+.jumbotron{ position: fixed;
+  top: 0; left: 0; right: 0; height: 100%;
+  background-size: cover; background-repeat: no-repeat; background-position: center;
+  overflow:hidden; z-index: -100;
+}
+
+body {
+  overflow: scroll;
+}
+
+#privacypolicy>.jumbotron{
+  background-color: var(--blue-purple);
+}
+
+#privacypolicy>.gnb-bar{
+  background-color: var(--blue-purple);
+}
+
+.privacypolicy, .terms {
+  display: block;
+  position: relative;
+  margin-top:5rem;
+  padding-left:15rem;
+  padding-bottom: 20rem;
+  font-weight: 400;
+  width: 70%; height: 60%;
+  font-family: 'Noto Sans KR'; line-height: 3.6rem;
+  font-size:  1.8rem; color: var(--white);
+  overflow: scroll;
+
+}
+
+.jumbotron>div{
+  position:absolute; content: ''; width:100%; height:100%;
+  background-size: contain;  background-repeat: no-repeat;  overflow:auto;
+}
+
+.jumbotron>.backgroundbasic{
+  top: 0; right: 0; height: 103%;
+  background-image: url(bg/bg.svg);
+  background-position: top -3rem right -17rem;
+}
+
+/* footer */
+
+.footer {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  height: 10rem;
+  overflow: auto;
+}
+
+#privacypolicy>.footer{
+  position: relative;
+}
+
+.footer .footer-left {
+  float: left; overflow: auto;
+  padding-left: 5rem;
+}
+
+.footer .footer-right {
+  float: right; overflow: auto;
+  padding-right: 5rem;
+}
+
+.footer .footer-left h1, .footer .footer-right h1 {
+  float: left;
+  padding: 4rem 1rem 6rem 1rem;
+  font-family: 'Noto Sans KR';   font-weight: 700;
+  font-size:  1.2rem; color: var(--white);
+}
