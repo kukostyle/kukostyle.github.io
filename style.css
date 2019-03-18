@@ -10,6 +10,16 @@ html, body{
   font-size: calc(100vw/144);
   }
 
+  @font-face {
+    font-family: 'Jua';
+    src: local('Jua'), url('https://fonts.googleapis.com/css?family=Jua') format('truetype');
+  }
+
+  @font-face {
+  font-family: 'Jua';
+  src: url('https://fonts.googleapis.com/css?family=Jua');
+}
+
 @media (max-width: 800px), (orientation: portrait) {
   html {font-size: calc(100vw/70);}
 }
