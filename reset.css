@@ -26,7 +26,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 html, body {overflow: auto;}
-a{ text-decoration: none;}
+a{ text-decoration: none; color:white; text-decoration-color: white;}
 li{ list-style: none;}
 button, input { cursor: pointer; outline:none; border:none; background-color: transparent;}
 
