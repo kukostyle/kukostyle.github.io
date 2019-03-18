@@ -14,6 +14,11 @@ html, body{
   html {font-size: calc(100vw/70);}
 }
 
+@media (max-width: 430px) {
+  html {font-size: calc(100vw/45);}
+}
+
+
 /* color palette*/
 :root {
   --light-purple: #984bff;
@@ -184,4 +189,11 @@ body {
 .jumbotron>.backgroundbasic {
   background-position: top 10vh left 100vw; width: 150%;}
 .privacypolicy, .terms { width: 100%; padding-left: 10rem; padding-right: 10rem;}
+#privacypolicy>.main-03>a>.appstore {display: none;}
+}
+
+@media (max-width: 430px) {
+  .main{ padding-right: 6rem;}
+  .appstore{    width: 25rem; height: 10rem; top: calc(72vh); left: 6rem;}
+  .privacypolicy, .terms { width: 100%; padding-left: 6rem; padding-right: 6rem;}
 }
