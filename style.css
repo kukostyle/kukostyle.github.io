@@ -10,10 +10,9 @@ html, body{
   font-size: calc(100vw/144);
   }
 
-@media (min-width: 940px) {
-  html {}
+@media (max-width: 800px) {
+  html {font-size: calc(100vw/70);}
 }
-
 
 /* color palette*/
 :root {
@@ -177,4 +176,12 @@ body {
   padding: 4rem 1rem 6rem 1rem;
   font-family: 'Noto Sans KR';   font-weight: 700;
   font-size:  1.2rem; color: var(--white);
+}
+
+
+@media (max-width: 800px) {
+.main-01{width: 100%;}
+.jumbotron>.backgroundbasic {
+  background-position: top 10vh left 100vw; width: 150%;}
+.privacypolicy, .terms { width: 100%; padding-left: 10rem; padding-right: 10rem;}
 }
