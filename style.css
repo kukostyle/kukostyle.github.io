@@ -221,8 +221,9 @@ body {
 
 @media (max-width: 800px), (orientation: portrait) {
 .jumbotron>.backgroundbasic {
-  display: none;
-  background-position: top 10vh left 100vw; width: 150%;}
+  max-height: 200%;
+  width: 150%;
+  background-position: top 20vh left 90vw;}
 .appstore{
   top: calc(60vh);
 }
@@ -247,6 +248,7 @@ body {
 }
 
 @media (max-width: 430px) {
+  .jumbotron>.backgroundbasic {display:none;}
   .main{ padding-right: 6rem;}
   .appstore{
     display: block; position: relative;
