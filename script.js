@@ -35,7 +35,7 @@ setInterval(function(){
     }else{
       $('.gnb-bar').removeClass('addbg');
     }
-
+    var userWidth = $(window).width()
     var mainHeight = main.clientHeight;
     console.log('mainHeight is ' + mainHeight);
     var userHeight = $(window).height()
@@ -48,5 +48,13 @@ setInterval(function(){
     else{
       $('.footer').removeClass('footerposition');
     }
-    
+
+    // if max width가 430px 보다 작으면, main-02에 사진을 넣자!
+    if(userWidth<430){
+      $('.mobilebackground').addClass('backgroundbasic');
+    }
+    else{
+      $('.mobilebackground').removeClass('backgroundbasic');
+    }
+
 },128);

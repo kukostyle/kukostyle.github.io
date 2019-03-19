@@ -181,7 +181,7 @@ body {
   background-size: contain;  background-repeat: no-repeat;  overflow:auto;
 }
 
-.jumbotron>.backgroundbasic{
+.backgroundbasic{
   top: 0; right: 0; height: 103%; min-height: calc(64vw); max-height: calc(100vw);
   background-image: url(bg/bg.svg);
   background-position: top -3rem right -17rem;
@@ -274,4 +274,10 @@ body {
   }
   #main>.main-01{height:90rem;}
   #main>.gnb-bar {background-color: #984BFFD9;}
+  .backgroundbasic{
+    min-height: calc(200vw);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
