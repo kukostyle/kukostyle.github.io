@@ -1,10 +1,10 @@
 function draw() {
-  var userHeight1 = $(window).height()
-  var userWidth1 = $(window).width()
+//  var userHeight1 = $(window).height()
+//  var userWidth1 = $(window).width()
   var canvas = document.getElementById('canvas');
   if (canvas.getContext) {
     var bg01 = canvas.getContext('2d');
-    bg01.fillStyle = '#984BFF'; //#8727FF
+    bg01.fillStyle = '#984BFF';
     bg01.beginPath();
     bg01.moveTo(0, 0);
     bg01.lineTo(990, 0);
@@ -20,8 +20,6 @@ function draw() {
     bg02.lineTo(750,1375);
     bg02.closePath();
     bg02.fill();
-
-
   }
 
 }
@@ -50,4 +48,5 @@ setInterval(function(){
     else{
       $('.footer').removeClass('footerposition');
     }
+    
 },128);
