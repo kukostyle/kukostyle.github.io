@@ -70,6 +70,9 @@ body {background-color: #b067ff;}
 button.gnb:active{ color: var(--faded-orange); border-bottom-color: var(--faded-orange);
 }*/
 
+.addbg{
+  background-color: #b067ff;
+}
 
 .gnb-bar {
   position: fixed;

@@ -1,7 +1,16 @@
+
 var main = $('.main-01')[0];  //added [0]
 var footer = $('.footer')[0];
 
 setInterval(function(){
+    var scroll = document.body.scrollTop;
+    console.log('scroll is'+ scroll);
+    if(scroll>15){
+      $('.gnb-bar').addClass('addbg');
+    }else{
+      $('.gnb-bar').removeClass('addbg');
+    }
+
     var mainHeight = main.clientHeight;
     console.log('mainHeight is ' + mainHeight);
     var userHeight = $(window).height()
