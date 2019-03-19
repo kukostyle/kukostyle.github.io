@@ -1,4 +1,5 @@
 
+
 var main = $('.main-01')[0];  //added [0]
 var footer = $('.footer')[0];
 
