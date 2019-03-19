@@ -101,14 +101,14 @@ button.gnb:active{ color: var(--faded-orange); border-bottom-color: var(--faded-
 .main-01 {
   display: block;
   position:relative;
-  width: 40%;
+  padding-left: 6rem;
 }
 
 .main {
   display: block;
   position: relative;
   height: 40%;
-  padding: 14rem 0rem 0rem 6rem;
+  padding-top: 14rem;
   color: #ffffff;
   font-size: 9rem; line-height: 10rem;
   text-shadow: -0.1rem -0.1rem 0rem #FFD300, -1rem -0.6rem 0rem #B83CDF;
@@ -116,15 +116,19 @@ button.gnb:active{ color: var(--faded-orange); border-bottom-color: var(--faded-
 
 #privacypolicy>.main-01 { width: 100%; }
 
+.appstorebutton{
+  display: block;
+  position: relative;
+}
+
 .appstore {
   display: block;
-  position: absolute;
-  width: 20rem; height: 10rem; top: calc(70vh); left: calc(7vw);
+  width: 20rem; height: 10rem; margin-top:3rem;
   background-image: url(bg/btn.svg);
   background-size: contain; background-repeat: no-repeat; background-position: center;
 }
 strong {font-weight: 700;}
-#privacypolicy>.main-03>a>.appstore {
+#privacypolicy>.main-03>a>.appstore { position: absolute;
   width: 20rem; height: 10rem;  top: calc(50vh); left: calc(80vw);
 }
 /*
@@ -174,7 +178,7 @@ body {
 }
 
 .jumbotron>.backgroundbasic{
-  top: 0; right: 0; height: 103%;
+  top: 0; right: 0; height: 103%; min-height: calc(64vw); max-height: calc(100vw);
   background-image: url(bg/bg.svg);
   background-position: top -3rem right -17rem;
 }
@@ -211,7 +215,6 @@ body {
 
 
 @media (max-width: 800px), (orientation: portrait) {
-.main-01{width: 100%;}
 .jumbotron>.backgroundbasic {
   display: none;
   background-position: top 10vh left 100vw; width: 150%;}
@@ -229,7 +232,7 @@ body {
   padding: 0rem; margin-top:0.6rem; padding-right:2rem;
 }
 #privacypolicy>.main-01>.main{font-size:6rem;
-  padding-right: 0rem; padding-left: 0rem; text-align: center;}
+  padding-right: 6rem; text-align: center;}
 .privacypolicy, .terms {
   margin-top:3rem; padding-bottom: 10rem; padding-left: 6rem; padding-right: 6rem;
 }
@@ -244,15 +247,14 @@ body {
     width: 25rem; height: 10rem; bottom: -32rem; left: 5rem;
     top: 30rem; }
   .privacypolicy, .terms {
-    width: 100%; padding-left: 4rem; padding-right: 4rem; padding-bottom:5rem;
+    padding-left: 4rem; padding-right: 4rem; padding-bottom:5rem;
     margin-top:3rem;
   }
   /*일단 모바일 보면서 사이즈 조정함*/
   .gnb-bar .gnb-bar-left img {height: 2rem; margin-top:0.3rem;}
   .gnb-bar .gnb-bar-left .gnb {padding: 3.7rem 0rem 0rem 4rem; font-size: 1.8rem;}
   #privacypolicy>.gnb-bar { background-color: #5d04d3;}
-  #privacypolicy>.main-01>.main{font-size:5rem;
-    padding-right: 0rem; padding-left: 0rem; text-align: center;}
+  #privacypolicy>.main-01>.main{font-size:5rem;}
   .footer{overflow:visible;
     overflow: visible; position: relative;
     display: block; background-color: #5d04d3;
