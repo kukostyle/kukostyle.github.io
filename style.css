@@ -76,7 +76,7 @@ button.gnb:active{ color: var(--faded-orange); border-bottom-color: var(--faded-
   top: 0; left: 0; right: 0;
   height: 10rem;
   z-index: 10;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .gnb-bar .gnb-bar-left {
@@ -185,7 +185,7 @@ body {
   position: fixed;
   bottom: 0; left: 0; right: 0;
   height: 10rem;
-  overflow: auto;
+  overflow: hidden;
 }
 
 #privacypolicy>.footer{
