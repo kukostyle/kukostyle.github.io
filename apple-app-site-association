@@ -4,15 +4,15 @@
     "details": [
       {
         "appID": "4A7WHUXQS6.co.phlox.kuko",
-        "paths": [ "NOT /qa/*", "NOT /dev/*" , "/user/*" ]
+        "paths": [ "NOT /qa/*", "NOT /dev/*" , "/*" ]
       },
       {
         "appID": "4A7WHUXQS6.co.phlox.kukoDev",
-        "paths": [ "/dev/user/*" ]
+        "paths": [ "/dev/*" ]
       },
       {
         "appID": "4A7WHUXQS6.co.phlox.kukoQA",
-        "paths": [ "/qa/user/*" ]
+        "paths": [ "/qa/*" ]
       }
     ]
   }
