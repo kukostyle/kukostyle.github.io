@@ -5,8 +5,8 @@
     -o-transition: all 0.20s ease-in-out; */
 
 html, body{
-  font-family: 'Jua';
-  font-size: 10px; width: 100%; height: 100%;
+  font-family: 'Noto Sans KR';
+  font-size: 6px; width: 100%; height: 100%;
   font-size: calc(100vw/144);
   -ms-overflow-style: none; // IE에서 스크롤바 감춤
   &::-webkit-scrollbar {
@@ -28,7 +28,7 @@ html, body{
   @font-face {
     font-family: 'Noto Sans KR';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     src: url('../fonts/noto-sans-kr-v9-latin_korean-regular.eot'); /* IE9 Compat Modes */
     src: local('Noto Sans KR Regular'), local('NotoSansKR-Regular'),
          url('../fonts/noto-sans-kr-v9-latin_korean-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -36,9 +36,9 @@ html, body{
   }
   /* noto-sans-kr-700 - latin_korean */
   @font-face {
-    font-family: 'Noto Sans KR';
+    font-family: 'Noto Sans KR-Bold';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     src: url('../fonts/noto-sans-kr-v9-latin_korean-700.eot'); /* IE9 Compat Modes */
     src: local('Noto Sans KR Bold'), local('NotoSansKR-Bold'),
          url('../fonts/noto-sans-kr-v9-latin_korean-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -55,7 +55,7 @@ html, body{
 
 /* color palette*/
 
-body {background-color: #b067ff;}
+body {background-color: #8346FF;}
 
 /*
 ::-webkit-scrollbar { width: 0.8rem;}
@@ -71,14 +71,13 @@ button.gnb:active{ color: var(--faded-orange); border-bottom-color: var(--faded-
 }*/
 
 .addbg{
-  background-color: #b067ff;
-  background-color: #b067ffD9;
+  background-color: #732CF4;
 }
 
 .gnb-bar {
   position: fixed;
   top: 0; left: 0; right: 0;
-  height: 10rem;
+  height: 8rem;
   z-index: 10;
   overflow: hidden;
 }
@@ -88,8 +87,8 @@ button.gnb:active{ color: var(--faded-orange); border-bottom-color: var(--faded-
 }
 
 .gnb-bar .gnb-bar-left .gnb {
-  float: left; overflow: auto;  padding: 4rem 4rem 4rem 6rem;
-  font-family: 'Noto Sans KR';
+  float: left; overflow: auto;  padding: 3rem 3rem 3rem 6rem;
+  font-family: 'Noto Sans KR-Bold';
   font-weight: 700;
   font-size:  1.6rem; color: #ffffff;
 }
@@ -112,10 +111,10 @@ button.gnb:active{ color: var(--faded-orange); border-bottom-color: var(--faded-
   display: block;
   position: relative;
   height: 40%;
-  padding-top: 14rem;
+  padding-top: 28vh;
   color: #ffffff;
-  font-size: 9rem; line-height: 10rem;
-  text-shadow: -0.1rem -0.1rem 0rem #FFD300, -1rem -0.6rem 0rem #B83CDF;
+  font-size: 6rem; line-height: 8rem;
+  font-weight:300;
   }
 
 #privacypolicy>.main-01 { width: 100%; }
@@ -123,14 +122,19 @@ button.gnb:active{ color: var(--faded-orange); border-bottom-color: var(--faded-
 .appstorebutton{
   display: block;
   position: relative;
+  cursor:pointer;
 }
+
 
 .appstore {
   display: block;
   width: 20rem; height: 10rem; margin-top:3rem;
-  background-image: url(bg/btn.svg);
+  background-image: url(img/appstore.png);
   background-size: contain; background-repeat: no-repeat; background-position: center;
 }
+
+
+
 strong {font-weight: 700;}
 #privacypolicy>.main-03>a>.appstore { position: absolute;
   width: 20rem; height: 10rem;  top: calc(50vh); left: calc(80vw);
@@ -182,9 +186,9 @@ body {
 }
 
 .backgroundbasic{
-  top: 0; right: 0; height: 103%; min-height: calc(64vw); max-height: calc(100vw);
+  top: 0; right: 0; height: 100%; min-height: calc(64vw); max-height: calc(100vw);
   background-image: url(bg/bg.svg);
-  background-position: top -3rem right -17rem;
+  background-position: top -1rem right -14rem;
 }
 
 /* footer */
@@ -243,17 +247,19 @@ body {
 .privacypolicy, .terms {
   margin-top:3rem; padding-bottom: 10rem; padding-left: 6rem; padding-right: 6rem;
 }
-  #privacypolicy>.gnb-bar { background-color: #5d04d3;}
+  #privacypolicy>.gnb-bar { background-color: #732CF4;}
 
 }
 
 @media (max-width: 430px) {
   .jumbotron>.backgroundbasic {display:none;}
-  .main{ padding-right: 6rem;}
+  .main{ padding-right: 6rem; padding-top:20vh; position:fixed; top:4rem;font-size: 5.7rem; line-height:7rem;}
+  .main-01{padding-left:4rem;}
   .appstore{
-    display: block; position: relative;
-    width: 25rem; height: 10rem; bottom: -32rem; left: 5rem;
-    top: 30rem; }
+    display: block; margin-top:19rem;
+    height: 10rem; bottom: -32rem;
+    top: 22rem; 
+    position:fixed;}
   .privacypolicy, .terms {
     padding-left: 4rem; padding-right: 4rem; padding-bottom:5rem;
     margin-top:3rem;
@@ -261,11 +267,11 @@ body {
   /*일단 모바일 보면서 사이즈 조정함*/
   .gnb-bar .gnb-bar-left img {height: 2rem; margin-top:0.3rem;}
   .gnb-bar .gnb-bar-left .gnb {padding: 3.7rem 0rem 0rem 4rem; font-size: 1.8rem;}
-  #privacypolicy>.gnb-bar { background-color: #5d04d3;}
+  #privacypolicy>.gnb-bar { background-color: #732CF4;}
   #privacypolicy>.main-01>.main{font-size:5rem;}
   .footer{ overflow: visible; position: relative;
-    display: block; background-color: #5d04d3;
-    padding: 4rem; height: 40rem;}
+    display: block; background-color: #732CF4;
+    padding: 4rem; height: 17rem; line-height:1rem; padding-top:1rem;}
   .footer .footer-left, .footer .footer-right {
     float: left; display: block; margin-left: 0;
     padding: 0rem;
@@ -274,12 +280,53 @@ body {
     font-weight: 400; font-size: 1.4rem;
     padding: 0rem; margin-top:2rem; padding-right:2rem;
   }
-  #main>.main-01{height:90rem;}
-  #main>.gnb-bar {background-color: #984BFFD9;}
+  #main>.main-01{height:47rem;}
+  #main>.gnb-bar {background-color: #732CF4;}
   .backgroundbasic{
     min-height: calc(200vw);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top 0rem right -14rem;
+  }
+}
+
+
+
+@media (max-width: 320px) {
+  .jumbotron>.backgroundbasic {display:none;}
+  .main{ padding-right: 6rem; padding-top:16vh; position:fixed; top:4rem;font-size: 5.4rem; line-height:6.5rem;}
+  .main-01{padding-left:3rem;}
+  .appstore{
+    display: block; margin-top:14rem;
+    height: 10rem; bottom: -32rem;
+    top: 22rem; 
+    position:fixed;}
+  .privacypolicy, .terms {
+    padding-left: 4rem; padding-right: 4rem; padding-bottom:5rem;
+    margin-top:3rem;
+  }
+  /*일단 모바일 보면서 사이즈 조정함*/
+  .gnb-bar .gnb-bar-left img {height: 2rem; margin-top:-0.3rem;}
+  .gnb-bar .gnb-bar-left .gnb {padding: 3.3rem 0rem 0rem 3rem; font-size: 1.8rem;}
+  #privacypolicy>.gnb-bar { background-color: #732CF4;}
+  #privacypolicy>.main-01>.main{font-size:5rem;}
+  .footer{ overflow: visible; position: relative;
+    display: block; background-color: #732CF4;
+    padding: 4rem; height: 17rem; line-height:1rem; padding-top:1rem;}
+  .footer .footer-left, .footer .footer-right {
+    float: left; display: block; margin-left: 0;
+    padding: 0rem;
+  }
+  .footer>.footer-left>h1, .footer>.footer-right>h1 {
+    font-weight: 400; font-size: 1.4rem;
+    padding: 0rem; margin-top:2rem; padding-right:2rem;
+  }
+  #main>.main-01{height:47rem;}
+  #main>.gnb-bar {background-color: #732CF4;}
+  .backgroundbasic{
+    min-height: calc(200vw);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top 0rem right -14rem;
   }
 }

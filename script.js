@@ -4,16 +4,16 @@ function draw() {
   var canvas = document.getElementById('canvas');
   if (canvas.getContext) {
     var bg01 = canvas.getContext('2d');
-    bg01.fillStyle = '#984BFF';
+    bg01.fillStyle = '#7B3AFF';
     bg01.beginPath();
-    bg01.moveTo(0, 0);
+    bg01.moveTo(-750, 0);
     bg01.lineTo(990, 0);
-    bg01.lineTo(0,1375);
+    bg01.lineTo(170,1375);
     bg01.closePath();
     bg01.fill();
 
     var bg02 = canvas.getContext('2d');
-    bg02.fillStyle = '#8727FF';
+    bg02.fillStyle = '#6E2AF6';
     bg02.beginPath();
     bg02.moveTo(0, 260);
     bg02.lineTo(0,1375);
