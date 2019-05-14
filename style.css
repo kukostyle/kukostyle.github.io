@@ -116,11 +116,15 @@ button.gnb:active{ color: var(--faded-orange); border-bottom-color: var(--faded-
   display: block;
   position: relative;
   height: 40%;
-  padding-top: 28vh;
+  padding-top: 35vh;
   color: #ffffff;
-  font-size: 6rem; line-height: 8rem;
-  font-weight:300;
+  font-size: 6rem; line-height: 7rem;
+  font-weight:700;
+  letter-spacing:1rem;
   }
+
+.subtext{font-family:'Noto Sans KR'; color:white; font-size:2.3rem;
+font-weight:300; margin-top:.7rem;}
 
 #privacypolicy>.main-01 { width: 100%; }
 
@@ -201,7 +205,7 @@ body {
 .footer {
   position: fixed;
   bottom: 0; left: 0; right: 0;
-  height: 10rem;
+  height: 8rem;
   overflow: hidden;
 }
 
@@ -258,13 +262,17 @@ body {
 
 @media (max-width: 430px) {
   .jumbotron>.backgroundbasic {display:none;}
-  .main{ padding-right: 6rem; padding-top:20vh; top:2rem;font-size: 5.7rem; line-height:7rem;}
+  .main{ padding-right: 4rem; padding-top:17vh; top:2rem;font-size: 5.7rem; line-height:7rem;height:29rem;text-align:center;}
   .main-01{padding-left:4rem;}
+
+  .subtext{position:relative;display:block;margin:auto;padding-right:4rem;text-align:center;}
+
   .appstore{
-    display: block; margin-top:20rem;
+    display: block; margin-top:2rem;
     height: 10rem; bottom: -32rem;
-    top: 22rem; 
     }
+
+  .appstorebutton{position:absolute;top:50%;right:50%;transform:translate(50%,70%);}  
   .privacypolicy, .terms {
     padding-left: 4rem; padding-right: 4rem; padding-bottom:5rem;
     margin-top:7rem;
@@ -299,13 +307,14 @@ body {
 
 @media (max-width: 320px) {
   .jumbotron>.backgroundbasic {display:none;}
-  .main{ padding-right: 6rem; padding-top:16vh; top:2rem;font-size: 5.4rem; line-height:6.5rem;}
+  .main{ padding-right: 4rem; padding-top:20vh; top:2rem;font-size: 5.8rem; line-height:6rem;height:25rem;text-align:center;}
   .main-01{padding-left:3rem;}
+  .subtext{display:block; position:relative;padding-right:4rem;text-align:center;padding-top:3rem;}
   .appstore{
-    display: block; margin-top:15rem;
+    display: block; margin-top:3rem;
     height: 10rem; bottom: -32rem;
-    top: 22rem; 
     }
+  .appstorebutton{position:absolute;top:50%;right:50%;transform:translate(50%,41%);}  
   .privacypolicy, .terms {
     padding-left: 4rem; padding-right: 4rem; padding-bottom:5rem;
     margin-top:7rem;
