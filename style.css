@@ -248,7 +248,7 @@ body {
   padding: 0rem; margin-top:0.6rem; padding-right:2rem;
 }
 #privacypolicy>.main-01>.main{font-size:6rem;
-  padding-right: 6rem; text-align: center;}
+  padding-right: 6rem; }
 .privacypolicy, .terms {
   margin-top:3rem; padding-bottom: 10rem; padding-left: 6rem; padding-right: 6rem;
 }
@@ -258,25 +258,25 @@ body {
 
 @media (max-width: 430px) {
   .jumbotron>.backgroundbasic {display:none;}
-  .main{ padding-right: 6rem; padding-top:20vh; position:fixed; top:4rem;font-size: 5.7rem; line-height:7rem;}
+  .main{ padding-right: 6rem; padding-top:20vh; top:4rem;font-size: 5.7rem; line-height:7rem;}
   .main-01{padding-left:4rem;}
   .appstore{
-    display: block; margin-top:19rem;
+    display: block; margin-top:20rem;
     height: 10rem; bottom: -32rem;
     top: 22rem; 
-    position:fixed;}
+    }
   .privacypolicy, .terms {
     padding-left: 4rem; padding-right: 4rem; padding-bottom:5rem;
-    margin-top:3rem;
+    margin-top:7rem;
   }
   /*일단 모바일 보면서 사이즈 조정함*/
   .gnb-bar .gnb-bar-left img {height: 2rem; margin-top:0.3rem;}
-  .gnb-bar .gnb-bar-left .gnb {padding: 3.7rem 0rem 0rem 4rem; font-size: 1.8rem;}
+  .gnb-bar .gnb-bar-left .gnb {padding: 3.2rem 0rem 0rem 4rem; font-size: 1.8rem;}
   #privacypolicy>.gnb-bar { background-color: #732CF4;}
   #privacypolicy>.main-01>.main{font-size:5rem;}
   .footer{ overflow: visible; position: relative;
     display: block; background-color: #732CF4;
-    padding: 4rem; height: 17rem; line-height:1rem; padding-top:1rem;}
+    padding: 4rem; height: 23rem; line-height:1rem; margin-top:-30px;}
   .footer .footer-left, .footer .footer-right {
     float: left; display: block; margin-left: 0;
     padding: 0rem;
@@ -299,25 +299,25 @@ body {
 
 @media (max-width: 320px) {
   .jumbotron>.backgroundbasic {display:none;}
-  .main{ padding-right: 6rem; padding-top:16vh; position:fixed; top:4rem;font-size: 5.4rem; line-height:6.5rem;}
+  .main{ padding-right: 6rem; padding-top:16vh; top:4rem;font-size: 5.4rem; line-height:6.5rem;}
   .main-01{padding-left:3rem;}
   .appstore{
-    display: block; margin-top:14rem;
+    display: block; margin-top:15rem;
     height: 10rem; bottom: -32rem;
     top: 22rem; 
-    position:fixed;}
+    }
   .privacypolicy, .terms {
     padding-left: 4rem; padding-right: 4rem; padding-bottom:5rem;
-    margin-top:3rem;
+    margin-top:7rem;
   }
   /*일단 모바일 보면서 사이즈 조정함*/
   .gnb-bar .gnb-bar-left img {height: 2rem; margin-top:-0.3rem;}
-  .gnb-bar .gnb-bar-left .gnb {padding: 3.3rem 0rem 0rem 3rem; font-size: 1.8rem;}
+  .gnb-bar .gnb-bar-left .gnb {padding: 3.2rem 0rem 0rem 3rem; font-size: 1.8rem;}
   #privacypolicy>.gnb-bar { background-color: #732CF4;}
   #privacypolicy>.main-01>.main{font-size:5rem;}
   .footer{ overflow: visible; position: relative;
     display: block; background-color: #732CF4;
-    padding: 4rem; height: 17rem; line-height:1rem; padding-top:1rem;}
+    padding: 4rem; height: 23rem; line-height:1rem; margin-top:-30px;}
   .footer .footer-left, .footer .footer-right {
     float: left; display: block; margin-left: 0;
     padding: 0rem;
