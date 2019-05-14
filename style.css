@@ -266,7 +266,7 @@ body {
     height: 10rem; bottom: -32rem;
     }
 
-  .appstorebutton{position:absolute;top:50%;right:50%;transform:translate(50%,70%);}  
+  .appstorebutton{position:absolute;top:50%;right:50%;transform:translate(50%,70%);margin-top:1.8rem;}  
   .privacypolicy, .terms {
     padding-left: 4rem; padding-right: 4rem; padding-bottom:5rem;
     margin-top:11rem;
