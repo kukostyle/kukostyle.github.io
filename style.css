@@ -258,7 +258,7 @@ body {
 
 @media (max-width: 430px) {
   .jumbotron>.backgroundbasic {display:none;}
-  .main{ padding-right: 6rem; padding-top:20vh; top:4rem;font-size: 5.7rem; line-height:7rem;}
+  .main{ padding-right: 6rem; padding-top:20vh; top:2rem;font-size: 5.7rem; line-height:7rem;}
   .main-01{padding-left:4rem;}
   .appstore{
     display: block; margin-top:20rem;
@@ -299,7 +299,7 @@ body {
 
 @media (max-width: 320px) {
   .jumbotron>.backgroundbasic {display:none;}
-  .main{ padding-right: 6rem; padding-top:16vh; top:4rem;font-size: 5.4rem; line-height:6.5rem;}
+  .main{ padding-right: 6rem; padding-top:16vh; top:2rem;font-size: 5.4rem; line-height:6.5rem;}
   .main-01{padding-left:3rem;}
   .appstore{
     display: block; margin-top:15rem;
