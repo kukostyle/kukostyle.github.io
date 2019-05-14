@@ -93,7 +93,7 @@ button.gnb:active{ color: var(--faded-orange); border-bottom-color: var(--faded-
 
 .gnb-bar .gnb-bar-left .gnb {
   float: left; overflow: auto;  padding: 3rem 3rem 3rem 6rem;
-  font-family: 'Noto Sans KR-Bold';
+  font-family: 'Noto Sans KR';
   font-weight: 700;
   font-size:  1.6rem; color: #ffffff;
 }
