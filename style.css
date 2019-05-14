@@ -12,6 +12,7 @@ html, body{
   &::-webkit-scrollbar {
     display: none !important; // 윈도우 크롬 등
   }
+  
   }
 
 
@@ -49,7 +50,6 @@ html, body{
        url('../fonts/noto-sans-kr-v11-korean_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-
 @media (max-width: 800px), (orientation: portrait) {
   html {font-size: calc(100vw/70);}
 }
@@ -59,16 +59,12 @@ html, body{
 }
 
 /* color palette*/
-
 body {background-color: #8346FF;}
 
 /*
 ::-webkit-scrollbar { width: 0.8rem;}
 ::-webkit-scrollbar-thumb {border-radius: 6rem; background-color: #ffffff; }
 */
-
-/* gnb */
-
 
 /*button.gnb:hover{ color: var(--light-mustard);
 }
@@ -134,15 +130,12 @@ font-weight:300; margin-top:.7rem;}
   cursor:pointer;
 }
 
-
 .appstore {
   display: block;
   width: 20rem; height: 10rem; margin-top:3rem;
   background-image: url(img/appstore.png);
   background-size: contain; background-repeat: no-repeat; background-position: center;
 }
-
-
 
 strong {font-weight: 700;}
 #privacypolicy>.main-03>a>.appstore { position: absolute;
@@ -196,7 +189,7 @@ body {
 
 .backgroundbasic{
   top: 0; right: 0; height: 100%; min-height: calc(64vw); max-height: calc(100vw);
-  background-image: url(bg/bg.png);
+  background-image: url(bg/bg.svg);
   background-position: top -1rem right -24rem;
 }
 
