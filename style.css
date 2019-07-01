@@ -124,16 +124,28 @@ font-weight:300; margin-top:.7rem;}
 
 #privacypolicy>.main-01 { width: 100%; }
 
+
+.storebuttons{display:block;position:relative;}
+
 .appstorebutton{
-  display: block;
-  position: relative;
+  float:left;
+  margin-right:1rem;
   cursor:pointer;
+  width:20rem;
+  height:5rem;
 }
 
 .appstore {
   display: block;
   width: 20rem; height: 10rem; margin-top:3rem;
   background-image: url(img/appstore.png);
+  background-size: contain; background-repeat: no-repeat; background-position: center;
+}
+
+.playstore {
+  display: block;
+  width: 20rem; height: 10rem; margin-top:3rem;
+  background-image: url(img/playstore.png);
   background-size: contain; background-repeat: no-repeat; background-position: center;
 }
 
@@ -266,7 +278,7 @@ body {
     height: 10rem; bottom: -32rem;
     }
 
-  .appstorebutton{position:absolute;top:50%;right:50%;transform:translate(50%,70%);margin-top:1.8rem;}  
+  .appstorebutton{display:block;transform:translate(23%,-4%);margin-top:1.4rem;}  
   .privacypolicy, .terms {
     padding-left: 4rem; padding-right: 4rem; padding-bottom:5rem;
     margin-top:11rem;
@@ -303,11 +315,17 @@ body {
   .main{ padding-right: 4rem; top:2rem;font-size: 5.8rem; line-height:6rem;text-align:center;}
   .main-01{padding-left:3rem;}
   .subtext{display:block; padding-right:4rem;text-align:center;}
+  .storebuttons{display:block;transform:translate(0%,29%);}
+  
+  .appstorebutton{transform:translate(15%,-4%);}
   .appstore{
-    display: block; margin-top:3rem;
+    
+    height: 10rem; bottom: -32rem;
+    } 
+   .playstore{
     height: 10rem; bottom: -32rem;
     }
-  .appstorebutton{position:absolute;top:50%;right:50%;transform:translate(50%,41%);margin-top:2rem;}  
+
   .privacypolicy, .terms {
     padding-left: 4rem; padding-right: 4rem; padding-bottom:5rem;
     margin-top:11rem;
